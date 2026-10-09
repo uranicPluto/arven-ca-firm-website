@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy-950: #040d16;
+    --navy-900: #081A2B;
+    --navy-800: #0f273e;
+    --navy-700: #183755;
+    --charcoal: #121820;
+    --ivory-50: #FAF9F5;
+    --ivory-100: #F7F6F1;
+    --ivory-200: #EFECE3;
+    --ivory-300: #E2DDD0;
+    --gold-500: #B79A61;
+    --gold-400: #C9AE77;
+    --gold-600: #9E824B;
+    --gold-100: #F5EFE3;
+    --slate-500: #66717C;
+    --slate-400: #8E99A4;
+    --slate-700: #3E4752;
+  }
+
+  body {
+    background-color: var(--ivory-100);
+    color: var(--charcoal);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-editorial {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-display {
+    font-family: 'Manrope', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Abstract Financial Data Grid Line Backgrounds */
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(8, 26, 43, 0.04) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(8, 26, 43, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-grid-pattern-dark {
+  background-image: linear-gradient(to right, rgba(183, 154, 97, 0.07) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(183, 154, 97, 0.07) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(8, 26, 43, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Glassmorphic Effects */
+.glass-nav {
+  background: rgba(247, 246, 241, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-nav-dark {
+  background: rgba(8, 26, 43, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(8, 26, 43, 0.08);
+}
+
+.glass-card-dark {
+  background: rgba(18, 24, 32, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(183, 154, 97, 0.18);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F6F1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4BFB2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B79A61;
+}
+
+/* Gold Gradient Accents */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #D6BF8A 0%, #B79A61 50%, #947942 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #C9AE77 0%, #B79A61 100%);
+}
+
+.gold-subtle-border {
+  border-color: rgba(183, 154, 97, 0.3);
+}
+
+/* Smooth Focus Rings */
+*:focus-visible {
+  outline: 2px solid #B79A61;
+  outline-offset: 2px;
+}
+
